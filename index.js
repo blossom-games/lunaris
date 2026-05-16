@@ -39,8 +39,6 @@ const WISP_FALLBACKS = [
 	{ mode: "tertiary", label: "third Wisp", url: TERTIARY_WISP_URL },
 ];
 const SESSION_TABS_KEY = "lunarisOpenTabs";
-const SUS_WORDS = ["porn", "xvideos", "pornhub", "hentai", "rule34", "nhentai", "redtube", "brazzers", "xhamster", "sex", "xxx", "xxporn", "porntub", "sex", "mommy", "daddy", "cock", "slut", "cum","cumslut", "xx", "diddy", "diddy party" ];
-const VERIFICATION_PHRASE = "I am a stupid little degenerate and I will remember this phrase for the rest of my life.";
 
 const internalPages = {
 	"lunaris://home": { title: "Lunaris", path: null, icon: "orbit", documentTitle: "Lunaris" },
@@ -60,364 +58,7 @@ const internalPages = {
 };
 
 const quotes = [
-	"Andrew Hu, I know you're trying to ragebait us with dates.",
-	"Yo yo yo - drdonutt",
-	"don't ever give up - a wise guy",
-	"If you see a scammer scamming, go and scam the scammer with their own scammer technique",
-	"Learning is a treasure that will follow its owner everywhere.",
-	"coded by the skids, for the skids",
-	"Classroom.lol but it's actually good",
-	"This is what you call.. a vibecoded site.",
-	"Teachers hate this one simple trick to get free games",
-	"I type all ts on ARCH BTW",
-	"trust me bro.. it's not a virus.💀",
-	"diddy diddy",
-	"ctrl+s your life bro",
-	"this site runs on hopes and bad javascript",
-	"99% of coding is googling",
-	"Curiosity is the wick in the candle of learning.",
-	"Knowledge speaks, but wisdom listens.",
-	"Why Unenroll when you have this?",
-	"Vibecoded by Claude",
-	"This site is so good, even MOJANG is jealous",
-	"The FBI is definitely not watching you use this, nope.",
-	"Jeffrey Epstein definitely did not use this site, no way.",
-	"Bro github copilot the quotes that u are making are so cringe [ROFL emoji]",
-	"Finally beat soulmaster [pray emoji]",
-	"Daddy hu!!",
-	"fuck you, im not adding shell shockers [rofl emoji]",
-	"nothing.",
-	"Teachers hate this one simple trick to get free games and tools on school chromebooks",
-	"The IRS CANNOT TOUCH ME!!",
-	"67.world for more!",
-	"Andewwww huuuu is . gay!!!",
-	"teachers hate ts", 
-	"what's Nasa-dude doing, idk prob hacking on mc",
-	"Have you ever played blox fruits with your life on line? while having A BUNCH of mangoes in your mouth? heh... well… this is called DARK MANGO PSYCHOLOGY 💀. Now in dark mango psychology you realize.. they arent just normal mangoes, they are DARK!",
-	"RHYMES WITH GRUG",
-	"67",
-	"get scammedddddd!!!",
-	"If you paid money for this u got scammed, edulearn and all of its services are FREE!!",
-	"UGS FILES VERY SOON!!",
-	"ive run out of quote ideas",
-	"loading the loading",
-	"trust the process",
-	"We can put anything here!",
-	"MOTD: LOGI",
-	"https://the-demonz.github.io (MOST VIBECODED SHIT EVER)",
-	"UwU :333",
-	"Nonchalanttttt :D",
-	"pickle pickle pickle",
-	"alvin the walnut",
-	"Hello wsg mr mail",
-	"Fastify it, act smooth, make a discord bot, and caddy!",
-	"dont do frugs",
-	"That's racially motivated..",
-	"This is what you call.. Diddable material.",
-	"ADS ARE NOT MY FAULT (F*CK YOU BREADBB)",
-	"Shock my shells",
-	"if you see this there was probably supposed to be a quote here. The developers ran out of ideas, which is why you see this",
-	"How many have you counted so far?",
-	"woahh, thats a lot of quotes!",
-	"Imagine using this when you literally told everyone it SUCKS HAHAHAHA",
-	"Dylanmc math vibes",
-	"luminal LIGHTSPEED BYPASSES!!!",
-	"SOAP PHIAAAA MY GOATTTT",
-	"Redragon gaming mouse, kawaii pack :3",
-	"thefakesydney is BACKKKKKKKKKKKKK!!! 676767",
-	"When faces when hndrew au, take him out - sun tzu",
-	"skid central PLZZZ partner",
-	"I see chungus. I slime him out - wise guy",
-	"Wsg therealfour",
-	"https://femboy.world :3",
-	"SLIME HIM OUT GUYSSS",
-	"20% ai slop",
-	"VIBE CODEEERR SUPREMEEEE",
-	"Why do you vibecode? - A gong bell that I could ring",
-	"ring me daddy",
-	"This video is sponsored by Genshin Impact-",
-	"Oh fuhh naww",
-	"skibidi.men for more!",
-	"Every 5 year old has a story behind them!",
-	"unblocked and unlocked", 
-	"running on pure caffeine", 
-	"if you're reading this, do your homework",
-	"Add a g**ning feature - nasa dude",
-	"no admins allowed", 
-	":333333333",
-	"You are NEVER finding out what PROXIES are.. hahaha - Matthew guy whos black",
-	"Why tf do u have so many apps on a cb - Conall Sadako",
-	"It's.. soo.. cold - guy",
-	"trust me bro.. it's not a virus.💀",
-	"oh nah bro 💀💀💀💀💀💀 ",
-	"Skull emoji virus 💀",
-	"Oops i js closed a tab💀💀",
-	"Montagem NO ONE CARES",
-	"Control + Shift + T to reopen a tab",
-	"Github copilot being suchhh a goooood boy..",
-	"rrrreal cute and helpful for writing code :3",
-	"mommy mommy please step on me - a random quote",
-	"security through obscurity", 
-	"ctrl + w to win instantly", 
-	"made with <3 and spaghetti code", 
-	"Set this up in alt tab to quickly escape",
-	"If you don't use this, go-",
-	"need more blahaj", 
-	"originally just a webview kajig", 
-	"frogiesarcade vibes", 
-	"This is where the fun begins! - Obi Wan Kenobi",
-	"vibecoded but it WORKS!", 
-	"Monkey find computer. Monkey type.", 
-	"goguardian is trash", 
-	"lightsped sytems", 
-	"This is a quote generator",
-	"Algebra Algebra Algebra Masters, more like Algebra Disaster - a random quote",
-	"No matter how much it feels like it, I'm not gay I swear! - A random", 
-	"Wait.. I can have MULTIPLE TABS?!? HOLY SHI*", 
-	"If you use this and I know you're a skid, screw you lmfao",
-	"gaming freedom!", 
-	"yall ready to play TS ALL DAY!?", 
-	"Fun fact: This doesn't break your fast for Ramadan! :O",
-	"The ogs know of classroom.lol", 
-	"tyrone's stupid games", 
-	"I have securly for breakfast, gogaurdian for lunch, and lightsped for dinner", 
-	"educational.sbs", 
-	"I'm jobless fr", 
-	"Jobless for using AI? Really?",
-	"THIS SITE IS NOT FOR DEGENERATES. GO AWAY!!", 
-	"I should ring Alvin's gong - wise guy", 
-	"If you want to humiliate your enemies, do it in a way that doesn't waste your own time. Use AI - Sun Zu",
-	"albie was here", 
-	"UNBLOCKED GAMES IN DA BIG 26!", 
-	"If you made it this far, join the discord!", 
-	"skids being skids", 
-	"Dont slime me out..daddy",
-	"toggle off particles for better performance", 
-	"I'll steal your code hahaha - J20", 
-	"Hella sick while typing this", 
-	"diddler5000",
-	"sphazelnut meow for me :33",
-	"catface obsession",
-	"Royalpear was here",
-	"strange obsession with six seven and six nine",
-	"wow these are so old messages",
-	"There are some funny easter eggs!",
-	"Look for some!",
-	"I use arch btw",
-	"Tf you mean it sucks?",
-	"We beat bebby.w3spaces.com!!!",
-	"last message so far.. consider yourself lucky.",
-	"I bet you're here for the geo grind.",
-	"Hollow knight in the big 2026?",
-	"most recent update: Stuff to make Andrew Hu jealous 3/29/2026",
-	"the wifi knows what you did last night",
-	"this tab knows too much",
-	"if this loads your wifi is valid",
-	"404 motivation not found",
-	"someone somewhere is procrastinating harder than you",
-	"your teacher probably uses this site too",
-	"this page is watching you scroll",
-	"if you see this you owe me 5 dollars",
-	"every refresh creates a new timeline",
-	"your future self is judging this tab",
-	"ctrl+s your life bro",
-	"why tf this many quotes?",
-	"this site runs on hopes and bad javascript",
-	"another day another tab",
-	"if it works don't touch it",
-	"half the internet is duct tape and dreams",
-	"99% of coding is googling",
-	"the other 1% is suffering",
-	"your ram is crying right now",
-	"every bug has a developer somewhere crying",
-	"the server hamster is tired",
-	"please stop opening 400 tabs",
-	"this site runs on a potato",
-	"if this breaks pretend it didn't",
-	"congratulations you found another quote",
-	"somewhere someone is counting these",
-	"how long have you been scrolling",
-	"bro go drink water",
-	"touch grass challenge: impossible",
-	"achievement unlocked: reading random quotes",
-	"this message will self destruct eventually",
-	"the internet never forgets",
-	"except when the cache clears",
-	"history will remember this tab",
-	"or maybe not",
-	"loading existential crisis...",
-	"life is just a series of loading screens",
-	"even a watch can run ts twin peaks edition",
-	"dev is probably asleep right now",
-	"dev hopes you are doing your homework instead of reading these",
-	"Just need to check this.. One more time...",
-	"67 airlines is hiring, apply now!",
-	"respawning in 3... 2... 1...",
-	"main character energy",
-	"side quest detected",
-	"you have discovered a useless quote",
-	"the dev definitely forgot this existed",
-	"this line of text traveled thousands of miles to reach you",
-	"meanwhile you are still procrastinating",
-	"if you read this you are legally cool",
-	"your cpu approves",
-	"your gpu disagrees",
-	"your battery fears you",
-	"low battery anxiety moment",
-	"the scroll never ends",
-	"there are always more quotes",
-	"infinite quotes glitch",
-	"someone add a quote counter",
-	"someone else will fix the bugs",
-	"future me problem",
-	"ship it and pray",
-	"works on my machine",
-	"the code compiles so it's fine",
-	"do not question the code",
-	"the code questions you",
-	"if it breaks blame the intern",
-	"there is no intern",
-	"the intern is you",
-	"congrats you're hired",
-	"your salary is 0 dollars",
-	"paid in experience",
-	"experience not included",
-	"this message was typed at 3am",
-	"sleep is optional",
-	"debugging is just detective work",
-	"except the detective is stupid",
-	"every line of code is a gamble",
-	"we gambling with the production server",
-	"please dont ddos the quote generator",
-	"or do idk",
-	"this is definitely production code",
-	"totally not spaghetti",
-	"100% professional engineering",
-	"trust me bro it works",
-	"never test in production",
-	"unless you do",
-	"this quote generator has lore",
-	"someone write the lore",
-	"the lore is lost",
-	"the lore never existed",
-	"the lore is just vibes",
-	"vibes based development",
-	"powered by vibes",
-	"vibes > documentation",
-	"documentation coming soon",
-	"soon since 2022",
-	"still soon",
-	"maybe tomorrow",
-	"definitely tomorrow",
-	"ok maybe next update",
-	"update coming soon™",
-	"soon™",
-	"tm symbol intensifies",
-	"the scroll continues",
-	"you are still reading",
-	"why are you still reading",
-	"go do homework bro",
-	"seriously",
-	"close the tab",
-	"no actually close it",
-	"ok one more quote",
-	"just one more",
-	"this is the last one",
-	"just kidding",
-	"there are more",
-	"infinite scrolling technology",
-	"this quote escaped containment",
-	"if found return to developer",
-	"developer missing since last commit",
-	"last commit: 3am",
-	"commit message: fixed stuff",
-	"nothing was fixed",
-	"the bug is now a feature",
-	"feature not documented",
-	"users discovered it anyway",
-	"accidental innovation",
-	"this is peak engineering",
-	"this quote does nothing",
-	"but it looks cool",
-	"style over substance",
-	"but mostly chaos",
-	"chaos driven development",
-	"we vibecoding today",
-	"we vibecoding tomorrow",
-	"we vibecoding forever",
-	"vibecode never dies",
-	"the vibe is strong",
-	"the vibe is unstable",
-	"vibes detected",
-	"maximum vibes reached",
-	"vibe overload",
-	"too many vibes",
-	"calm the vibes",
-	"ok vibes restored",
-	"system stable",
-	"system unstable",
-	"system vibing",
-	"system confused",
-	"system thinking",
-	"system procrastinating",
-	"system scrolling",
-	"system reading quotes",
-	"system still reading quotes",
-	"bro seriously go do homework",
-	"this message is a distraction",
-	"and it worked",
-	"congrats",
-	"achievement unlocked: procrastination",
-	"new speedrun category: quote reading",
-	"wr pace",
-	"someone submit this to speedrun.com",
-	"quote percent any%",
-	"quote percent 100%",
-	"imagine reading all of these",
-	"someone probably will",
-	"that someone might be you",
-	"this quote believes in you",
-	"maybe",
-	"probably not",
-	"ok maybe a little",
-	"never give up",
-	"unless the wifi dies",
-	"then it's over",
-	"wifi down bad",
-	"router crying",
-	"packet lost",
-	"lag detected",
-	"ping 999",
-	"skill issue",
-	"massive skill issue",
-	"internet skill issue",
-	"coding skill issue",
-	"quote writing skill issue",
-	"ok that one was rude",
-	"sorry about that",
-	"anyways",
-	"Last updated: 4/07/2026",
-	"back to quotes",
-	"the quotes never end",
-	"this might be the last one",
-	"or maybe not",
-	"ok now it's the last one",
-	"final quote maybe",
-	"sad milk uses this!",
-	"this time fr",
-	"no more quotes after this",
-	"unless someone adds more",
-	"they probably will",
-	"and the cycle continues",
-	"Wa Wa Wa Wa",
-	"The sky is not the limit, it's just the view.",
-	"Advanced calculus for high school and above.",
-	"Browse the web freely.",
-	"Education is the most powerful weapon.",
-	"Explore the cosmos of information.",
-	"Your gateway to the unblocked web.",
-	"Privacy is a human right.",
-	"Stay curious, stay free.",
+	"skidding is fun",
 ];
 
 const cloakPresets = {
@@ -698,13 +339,6 @@ function getActiveTab() {
 }
 
 function navigateActive(input) {
-	if (isSus(input)) {
-		showVerificationOverlay(() => {
-			const tab = getActiveTab();
-			if (tab) navigate(tab, input, true);
-		});
-		return;
-	}
 	const tab = getActiveTab();
 	if (tab) navigate(tab, input, true);
 }
@@ -1361,10 +995,8 @@ function applyCloak() {
 
 	const title = currentDocumentTitle();
 
-	// Update local document
 	updateDocumentIdentity(document, title, icon);
 
-	// Update top-level document if in an iframe (about:blank mode)
 	if (window.top !== window.self) {
 		try {
 			updateDocumentIdentity(window.top.document, title, icon);
@@ -1531,7 +1163,6 @@ async function updateSearchSuggestions(input, container) {
 	}
 
 	try {
-		// Use DuckDuckGo autocomplete API
 		const res = await fetch(`https://duckduckgo.com/ac/?q=${encodeURIComponent(query)}&type=list`);
 		const data = await res.json();
 		const results = data[1] || [];
@@ -1553,7 +1184,7 @@ async function updateSearchSuggestions(input, container) {
 
 		Array.from(container.querySelectorAll(".search-suggestion-item")).forEach(item => {
 			item.onmousedown = (e) => {
-				e.preventDefault(); // Prevent input blur before click
+				e.preventDefault();
 				const text = item.querySelector(".suggestion-text").textContent;
 				input.value = text;
 				container.style.display = "none";
@@ -1585,59 +1216,3 @@ function escapeHtml(value) {
 }
 
 window.addEventListener("DOMContentLoaded", boot);
-
-function isSus(input) {
-	const lower = (input || "").toLowerCase();
-	return SUS_WORDS.some((word) => lower.includes(word));
-}
-
-function showVerificationOverlay(onVerified) {
-	const overlay = document.createElement("div");
-	overlay.className = "verification-overlay";
-	overlay.innerHTML = `
-		<div class="verification-card">
-			<h1>Access Restricted</h1>
-			<p>Your search contains sensitive content. To proceed, please manually verify your intentions.</p>
-			<div class="verification-phrase-box">${VERIFICATION_PHRASE}</div>
-			<input type="text" id="verification-input" placeholder="Type the phrase above..." autocomplete="off" spellcheck="false" />
-			<button id="verification-submit">I Understand, Proceed</button>
-		</div>
-	`;
-	document.body.appendChild(overlay);
-
-	const input = overlay.querySelector("#verification-input");
-	const button = overlay.querySelector("#verification-submit");
-
-	// Prevent copying and other bypasses
-	const preventActions = (e) => {
-		e.preventDefault();
-		return false;
-	};
-	overlay.oncontextmenu = preventActions;
-	overlay.oncopy = preventActions;
-	overlay.onpaste = preventActions;
-	overlay.oncut = preventActions;
-	overlay.onselectstart = preventActions;
-
-	const check = () => {
-		if (input.value === VERIFICATION_PHRASE) {
-			overlay.remove();
-			onVerified();
-		} else {
-			input.style.borderColor = "#ff4f4f";
-			input.value = "";
-			input.placeholder = "Incorrect. Try again.";
-		}
-	};
-
-	input.addEventListener("keydown", (e) => {
-		if (e.key === "Enter") check();
-		// Disable ctrl+c, ctrl+v, etc.
-		if (e.ctrlKey && ['c', 'v', 'x', 'a'].includes(e.key.toLowerCase())) {
-			e.preventDefault();
-		}
-	});
-
-	button.onclick = check;
-	input.focus();
-}
