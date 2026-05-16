@@ -1,5 +1,4 @@
 "use strict";
-
 const tabsEl = document.getElementById("tabs");
 const newTabButton = document.getElementById("new-tab");
 const addressForm = document.getElementById("address-form");
